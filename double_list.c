@@ -168,8 +168,8 @@ void destroy_double_list(struct node **phead, struct node **ptail) {
 		printf("%d is freed\n", p->data);
 		free_node(p);
 		p = head;
-    */
-    //正确的做法
+        */
+    	//正确的做法
 		delete_node(p);
 		p = head->next;
 	}
