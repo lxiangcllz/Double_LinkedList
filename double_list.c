@@ -161,10 +161,10 @@ void destroy_double_list(struct node **phead, struct node **ptail) {
 
 	struct node *p = NULL;
 	for (p = head->next; p != tail;) { //释放除头、尾节点外的所有节点
-		/*
-    //注意，这样像单链表中的释放节点的做法是不对的
-    //节点之间的指向关系丢失了，造成内存泄漏
-    head = p->next;
+	/*
+		//注意，这样像单链表中的释放节点的做法是不对的
+		//节点之间的指向关系丢失了，造成内存泄漏
+		head = p->next;
 		printf("%d is freed\n", p->data);
 		free_node(p);
 		p = head;
